@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana de Tecnologia e Cultura - IFCE Maranguape</title>
+    
+    <style>
+        /* 3. Requisitos CSS - Cores, Tipografia e Regras Gerais */
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            background-color: rgb(235, 245, 238); /* Fundo geral em verde bem claro (RGB) */
+            margin: 0;
+            padding: 0;
+            color: #1b4332; /* Texto principal em verde escuro (Hexadecimal) */
+        }
+
+        /* Títulos e Tipografia */
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            letter-spacing: 2px;
+            color: #081c15;
+            margin: 0 0 10px 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #2d6a4f;
+            border-bottom: 2px solid #52b788;
+            padding-bottom: 5px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        /* 2. Requisitos CSS - Box Model */
+
+        /* Cabeçalho */
+        header {
+            background-color: #b7e4c7; /* Verde claro elegante (Hexadecimal) */
+            padding: 30px;
+            margin-bottom: 20px;
+            border-bottom: 4px solid #1b4332;
+        }
+
+        header p {
+            text-align: center;
+            font-size: 18px;
+            color: #2d6a4f;
+            margin: 0;
+        }
+
+        /* Menu de Navegação */
+        nav {
+            background-color: #19422f; /* Verde escuro (Nome de cor simulado / Hex equivalente) */
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #d8f3dc; /* Verde claro para os links */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        /* Pseudo-classe :hover para os links do menu */
+        nav ul li a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        /* Seções Principais */
+        section {
+            background-color: white; 
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid #74c69d; /* Borda verde média */
+            border-radius: 8px;
+        }
+
+        /* Seção Sobre */
+        #sobre p {
+            text-align: justify;
+        }
+
+        .imagem-ilustrativa {
+            width: 400px;
+            height: 250px;
+            border: 3px solid #2d6a4f;
+            display: block;
+            margin: 15px auto;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        /* Seção Programação (Tabela) */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #52b788;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2d6a4f;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgb(216, 243, 220); /* Linhas alternadas em verde claro (RGB) */
+        }
+
+        /* Seção Atividades - Caixas com Box Model */
+        .caixa-atividade {
+            width: 300px;
+            height: 180px;
+            padding: 20px;
+            margin: 15px 0;
+            border-style: solid;
+        }
+
+        .caixa-atividade h3 {
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 0;
+        }
+
+        /* Regras específicas para as três caixas de atividades (conforme exigido pelo enunciado original) */
+        /* Caixa 1: Fundo azul-claro, borda azul-escura e cantos retos */
+        .caixa-1 {
+            background-color: lightblue; 
+            border-width: 3px;
+            border-color: darkblue; 
+            border-radius: 0px;
+        }
+
+        /* Caixa 2: Fundo verde-claro, borda verde e cantos arredondados (border-radius: 15px) */
+        .caixa-2 {
+            background-color: rgb(210, 245, 210); 
+            border-width: 3px;
+            border-color: green; 
+            border-radius: 15px;
+        }
+
+        /* Caixa 3: Fundo vermelho-claro, borda roxa de 5px, border-radius: 30px e border-top-left-radius: 0px */
+        .caixa-3 {
+            background-color: rgb(255, 220, 220); 
+            border-width: 5px;
+            border-color: purple; 
+            border-radius: 0px 30px 0px 30px;
+        }
+
+        .caixa-atividade a {
+            color: #1b4332;
+            font-weight: bold;
+        }
+
+        /* Link externo na Seção Inscrições */
+        #inscricoes a {
+            color: #2d6a4f;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        #inscricoes a:hover {
+            color: #1b4332;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: rgb(8, 28, 21); /* Verde bem escuro (RGB) */
+            color: #d8f3dc; /* Texto verde claro */
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Semana de Tecnologia e Cultura</h1>
+        <p>Conectando conhecimento, inovação e arte no IFCE Campus Maranguape.</p>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#programacao">Programação</a></li>
+            <li><a href="#atividades">Atividades</a></li>
+            <li><a href="#inscricoes">Inscrições</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção Sobre -->
+    <section id="sobre">
+        <h2>Sobre o Evento</h2>
+        <p>A Semana de Tecnologia e Cultura do IFCE Campus Maranguape é um evento anual promovido com o objetivo de integrar a comunidade acadêmica por meio de debates, apresentações e capacitações. O encontro busca aproximar os estudantes das novas tendências tecnológicas e das manifestações culturais locais.</p>
+        <p>Durante o evento, os participantes terão a oportunidade de desenvolver novas habilidades práticas em oficinas, assistir a palestras com profissionais qualificados e prestigiar apresentações artísticas organizadas pelos próprios alunos e convidados.</p>
+        <img class="imagem-ilustrativa" src="img/images.jpg" alt="Imagem ilustrativa da Semana de Tecnologia e Cultura">
+    </section>
+
+    <!-- Seção Programação -->
+    <section id="programacao">
+        <h2>Programação do Evento</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Horário</th>
+                    <th>Nome da Atividade</th>
+                    <th>Local</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>08:00 - 10:00</td>
+                    <td>Abertura e Palestra de Inteligência Artificial</td>
+                    <td>Auditório</td>
+                </tr>
+                <tr>
+                    <td>10:15 - 12:00</td>
+                    <td>Oficina de Desenvolvimento Web com CSS3</td>
+                    <td>Laboratório de Informática 03</td>
+                </tr>
+                <tr>
+                    <td>13:30 - 15:30</td>
+                    <td>Mesa Redonda: Cultura Digital e Sociedade</td>
+                    <td>Sala - 111</td>
+                </tr>
+                <tr>
+                    <td>15:45 - 17:00</td>
+                    <td>Apresentação Cultural e Encerramento</td>
+                    <td>Auditorio</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Seção Atividades -->
+    <section id="atividades">
+        <h2>Atividades em Destaque</h2>
+
+        <!-- Caixa 1 -->
+        <div class="caixa-atividade caixa-1">
+            <h3>Oficina de HTML & CSS</h3>
+            <p>Aprenda a construir e estilizar páginas web modernas utilizando HTML5 e CSS3 na prática.</p>
+            <a href="#">Saiba mais</a>
+        </div>
+
+        <!-- Caixa 2 -->
+        <div class="caixa-atividade caixa-2">
+        <h3>Workshop de Robótica</h3>
+            <p>Introdução à automação e robótica educacional utilizando Arduino.</p>
+            <a href="#">Saiba mais</a>
+        </div>
+
+        <!-- Caixa 3 -->
+        <div class="caixa-atividade caixa-3">
+            <h3>Exposição Cultural</h3>
+            <p>Mostra de arte, fotografia e projetos culturais desenvolvidos pelos alunos do campus.</p>
+            <a href="#">Saiba mais</a>
+        </div>
+    </section>
+
+    <!-- Seção Inscrições -->
+    <section id="inscricoes">
+        <h2>Inscrições</h2>
+        <p>As inscrições para todas as oficinas e palestras são totalmente gratuitas e abertas ao público. Garanta sua vaga com antecedência acessando o portal oficial da instituição.</p>
+        <p>Para se inscrever, acesse o site oficial do IFCE: <a href="https://portal.ifce.edu.br/" target="_blank" rel="noopener noreferrer">Acessar o site do IFCE</a></p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p><strong>Instituto Federal de Educação, Ciência e Tecnologia do Ceará - Campus Maranguape</strong></p>
+        <p>Página desenvolvida por: [kaylane/ samira] - Turma de Desenvolvimento Web S4 T2</p>
+    </footer>
+
+</body>
+</html>
